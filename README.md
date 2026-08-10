@@ -2,7 +2,7 @@
   <img src="assets/branding/piratecat.png" alt="Apson YTDownloader" width="144">
 </p>
 
-# Apson YTDownloader 0.5.2
+# Apson YTDownloader 0.5.3
 
 Desktopowa aplikacja PySide6 do analizy materiałów YouTube i sekwencyjnego
 pobierania audio MP3 przez yt-dlp oraz FFmpeg. Obsługuje pojedyncze filmy,
@@ -24,12 +24,12 @@ bieżącej strony z przeglądarki.
 
 ## Instalacja i pierwsze użycie
 
-1. Pobierz `Apson-YTDownloader-Setup-0.5.2.exe` z najnowszego wydania.
+1. Pobierz `Apson-YTDownloader-Setup-0.5.3.exe` z najnowszego wydania.
 2. Uruchom instalator i wybierz katalog aplikacji oraz katalog danych.
 3. Wklej adres filmu lub playlisty YouTube i kliknij **Analizuj**.
 4. Zaznacz materiały, wybierz jakość MP3 i rozpocznij pobieranie.
 
-Alternatywnie rozpakuj `Apson-YTDownloader-Portable-0.5.2.zip` na zapisywalnym
+Alternatywnie rozpakuj `Apson-YTDownloader-Portable-0.5.3.zip` na zapisywalnym
 dysku i uruchom `ApsonYTDownloader.exe`. Wersja portable przechowuje dane obok
 aplikacji i nie rejestruje protokołu przeglądarki.
 
@@ -99,7 +99,7 @@ D:\Dev\YTDownloader-venv\Scripts\python.exe -m compileall app main.py scripts te
 .\scripts\build_windows.ps1 `
   -PythonExecutable D:\Dev\YTDownloader-venv\Scripts\python.exe `
   -BuildRoot D:\Dev\ApsonYTDownloader-build `
-  -ArtifactsRoot D:\Dev\ApsonYTDownloader-artifacts\0.5.2 `
+  -ArtifactsRoot D:\Dev\ApsonYTDownloader-artifacts\0.5.3 `
   -InnoCompiler D:\Dev\InnoSetup-7\ISCC.exe
 ```
 

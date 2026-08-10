@@ -1,6 +1,6 @@
 #define AppName "Apson YTDownloader"
 #ifndef AppVersion
-  #define AppVersion "0.5.2"
+  #define AppVersion "0.5.3"
 #endif
 #define AppExeName "ApsonYTDownloader.exe"
 
