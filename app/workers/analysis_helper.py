@@ -78,7 +78,10 @@ def main() -> int:
             "ok": False,
             "message": "Proces analizy zakończył się nieoczekiwanym błędem. Szczegóły zapisano w logu.",
         }
-    sys.stdout.write(json.dumps(response, ensure_ascii=False))
+    # The frozen Windows helper can expose stdout using the system code page
+    # even when PYTHONIOENCODING is set. Keep the process protocol ASCII-only;
+    # json.loads() in the parent process restores escaped Unicode characters.
+    sys.stdout.write(json.dumps(response, ensure_ascii=True))
     sys.stdout.flush()
     return 0 if response.get("ok") else 2
 

@@ -56,7 +56,7 @@ class BrandingAndReleaseTests(unittest.TestCase):
             project_root / "packaging" / "windows" / "version_info.txt"
         ).read_text(encoding="utf-8")
 
-        self.assertEqual(__version__, "0.5.2")
+        self.assertEqual(__version__, "0.5.3")
         self.assertIn(f'#define AppVersion "{__version__}"', installer)
         self.assertIn(f"StringStruct('FileVersion', '{__version__}')", version_info)
         self.assertIn(f"StringStruct('ProductVersion', '{__version__}')", version_info)

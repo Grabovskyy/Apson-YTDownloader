@@ -92,10 +92,12 @@ class DownloaderTests(unittest.TestCase):
             options = options_seen[0]
             self.assertEqual(options["format"], "bestaudio/best")
             self.assertEqual(options["postprocessors"][0]["preferredquality"], "192")
-            self.assertEqual(options["ffmpeg_location"], str((root / "tools").resolve()))
             self.assertEqual(
-                options["js_runtimes"]["deno"]["path"],
-                str((root / "tools" / "deno.exe").resolve()),
+                Path(options["ffmpeg_location"]), (root / "tools").resolve()
+            )
+            self.assertEqual(
+                Path(options["js_runtimes"]["deno"]["path"]),
+                (root / "tools" / "deno.exe").resolve(),
             )
             self.assertEqual(options["paths"]["temp"], str(downloader.paths.temp_dir / "downloads"))
             self.assertFalse(options["overwrites"])
