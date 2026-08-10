@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Przycisk przeglądarki — Apson YTDownloader</title>
+  <style>
+    body { max-width: 760px; margin: 60px auto; padding: 0 24px; background: #0b0f17; color: #e8edf7; font: 16px/1.55 "Segoe UI", sans-serif; }
+    .card { padding: 32px; background: #111824; border: 1px solid #222c3d; border-radius: 18px; }
+    h1 { margin-top: 0; }
+    .button { display: inline-block; margin: 14px 0; padding: 12px 18px; border-radius: 10px; background: #6d9eff; color: #07111f; text-decoration: none; font-weight: 700; }
+    code { color: #8cb6ff; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Wyślij do Apson YTDownloader</h1>
+    <p>Przeciągnij poniższy przycisk na pasek zakładek przeglądarki. Będąc na stronie filmu, kliknij zakładkę — aplikacja otworzy się i automatycznie przeanalizuje bieżący adres.</p>
+    <a class="button" href="javascript:(()=>{location.href='apson-ytdownloader://add?url='+encodeURIComponent(location.href)})()">↓ Wyślij do Apson YTDownloader</a>
+    <p>Przy pierwszym użyciu przeglądarka może poprosić o zgodę na otwarcie zewnętrznej aplikacji. Integracja wymaga wersji zainstalowanej przez installer EXE; portable ZIP nie rejestruje protokołu.</p>
+  </div>
+</body>
+</html>
